@@ -614,8 +614,10 @@ ul {
 }
 /* End Backup Manager Widget */
 /* Start Profile page */
-.wrapper-profile {
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+@media (max-width: 767px) {
+    .wrapper-profile {
+        flex-direction: column;
+    }
 }
 /* Start Overvirew Widget */
 @media (max-width: 767px) {
@@ -685,6 +687,12 @@ ul {
 .skills {
     width: 500px;
 }
+@media (max-width: 767px) {
+    .skills {
+        width: 100%;
+    }
+}
+
 /* End Skills Widget */
 /* Start activities Widget */
 .profile-page .activities .info-row img {
