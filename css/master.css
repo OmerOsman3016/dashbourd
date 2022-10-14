@@ -783,6 +783,58 @@ ul {
     transform: translate(-50%, -50%);
 }
 /* End Courses Page */
+/* Start Friends Page */
+.wrapper-friends {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+    .wrapper-friends {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+}
+.friends .about .friend-name {
+    flex-direction: column;
+}
+.friends .about .call-message {
+    top: 0;
+    left: 0;
+}
+.friends .about .call-message i {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #eee;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555;
+}
+.friends .about .call-message i:first-child {
+    margin-bottom: 10px;
+}
+.friends .about .call-message i:first-child:hover {
+    color: var(--green-color);
+}
+.friends .about .call-message i:last-child:hover {
+    color: var(--red-color);
+}
+.friends .friend-info > span {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    font-size: 50px;
+    letter-spacing: -2px;
+    color: #f59e0b33;
+}
+/* End Friends Page */
 /* Start Animation */
 @keyframes change-color {
     from {
