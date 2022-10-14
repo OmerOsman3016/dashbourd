@@ -711,6 +711,45 @@ ul {
 }
 /* End activities Widget */
 /* End Profile page */
+/* Start Projects Page */
+.wrapper .salah-dash > span:first-child {
+    position: absolute;
+    right: 20px;
+    top: 8px;
+}
+.wrapper .salah-dash .hold .images {
+    margin-top: 40px;
+}
+.wrapper .salah-dash .hold .images img {
+    padding: 2px;
+    background-color: white;
+    width: 40px;
+}
+.wrapper .salah-dash .hold .images img:not(:first-child) {
+    margin-left: -15px;
+}
+.wrapper .salah-dash .hold .images img:hover {
+    z-index: 1000;
+}
+.wrapper .salah-dash .techs {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.wrapper .salah-dash .info {
+    margin-top: 15px;
+}
+.wrapper .salah-dash .progress {
+    width: 50%;
+    height: 7px;
+    border-radius: 6px;
+    background-color: #eee;
+}
+.wrapper .salah-dash .progress > span {
+    height: 100%;
+    border-radius: 6px;
+    position: absolute;
+}
+/* End Projects Page */
 /* Start Animation */
 @keyframes change-color {
     from {
