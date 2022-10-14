@@ -728,9 +728,6 @@ ul {
 .wrapper .salah-dash .hold .images img:not(:first-child) {
     margin-left: -15px;
 }
-.wrapper .salah-dash .hold .images img:hover {
-    z-index: 1000;
-}
 .wrapper .salah-dash .techs {
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -746,6 +743,8 @@ ul {
 }
 .wrapper .salah-dash .progress > span {
     height: 100%;
+    top: 0;
+    left: 0;
     border-radius: 6px;
     position: absolute;
 }
