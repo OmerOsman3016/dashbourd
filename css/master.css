@@ -835,6 +835,162 @@ ul {
     color: #f59e0b33;
 }
 /* End Friends Page */
+/* Start Files Page */
+.content-files {
+    flex-direction: row-reverse;
+}
+@media (max-width: 767px) {
+    .content-files {
+        flex-direction: column;
+    }
+}
+/* Stert wrapper */
+.wrapper-files {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+    .wrapper-files {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+}
+@media (min-width: 767px) {
+    .wrapper-files {
+        width: 100%;
+    }
+}
+.my-file {
+    height: fit-content;
+    transition: 0.3s;
+}
+.my-file .file img {
+    transition: 0.3s;
+}
+.my-file:hover .file img {
+    transform: rotate(10deg);
+}
+/* End wrapper */
+/* Start Files Section */
+.files-section {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    top: 170px;
+}
+@media (max-width: 767px) {
+    .files-section {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+@media (min-width: 767px) {
+    .files-section .num-of-files {
+        width: 250px;
+    }
+}
+.files-section .num-of-files .icon {
+    width: 45px;
+    height: 45px;
+    color: var(--bule-color);
+}
+.files-section .num-of-files .blue {
+    background-color: #0d69d530;
+}
+.files-section .num-of-files .green {
+    background-color: #22c55e30;
+    color: var(--green-color);
+}
+.files-section .num-of-files .red {
+    background-color: #f3322630;
+    color: var(--red-color);
+}
+.files-section .num-of-files .orange {
+    background-color: #f59e0b30;
+    color: var(--orange-color);
+}
+.files-section .num-of-files .gb {
+    justify-content: flex-start;
+}
+.files-section button {
+    width: fit-content;
+    margin: auto;
+    transition: 0.3s;
+}
+.files-section button:hover {
+    background-color: var(--blue-alt-color);
+}
+.files-section button:hover i {
+    animation: up 0.6s infinite linear;
+}
+@keyframes up {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-5px);
+    }
+}
+.wrapper-files .my-file .icon i {
+    top: 10px;
+    left: 10px;
+}
+.wrapper-files .my-file .icon .file {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrapper-files .my-file .icon .file img {
+    width: 50px;
+}
+/* End Files Section */
+/* End Files Page */
+/* Start Plans Page */
+.plans-page {
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+    .plans-page {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+}
+.plans-page .plan .green {
+    padding: 20px 0;
+    border: 3px solid white;
+    outline: 3px solid var(--green-color);
+}
+.plans-page .plan .blue {
+    padding: 20px 0;
+    border: 3px solid white;
+    outline: 3px solid var(--blue-color);
+}
+.plans-page .plan .orange {
+    padding: 20px 0;
+    border: 3px solid white;
+    outline: 3px solid var(--orange-color);
+}
+.plans-page .plan .top .price {
+    margin: auto;
+    font-size: 40px;
+}
+.plans-page .plan .top .price span {
+    font-size: 25px;
+    left: -20px;
+}
+.plans-page ul li .help {
+    margin-left: auto;
+}
+/* End Plans Page */
 /* Start Animation */
 @keyframes change-color {
     from {
